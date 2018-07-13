@@ -14,6 +14,9 @@
   </p>
 </p>
 
+## Instalação Laravel - XAMPP (Windows)
+- [Instalação XAMPP](#instalação-xampp)
+
 ## Instalação
 
 - [Requerimentos](#requerimentos)
@@ -137,3 +140,18 @@ location / {
 ```
 
 claro, ao usar Homestead ou Valet, URLs bonitas serão configuradas automaticamente.
+
+## Instalação XAMPP
+<p align="center">
+  <a href="https://www.apachefriends.org/pt_br/index.html">
+    <img src="https://cdn.worldvectorlogo.com/logos/xampp.svg" alt="Logo Laravel" width="100" height="100">
+  </a>
+
+  <h3 align="center">XAMPP</h3>
+
+  <p align="center">
+    <a href="https://www.apachefriends.org/pt_br/download.html"><strong>Página de Download XAMPP »</strong></a>
+    <br>
+    <br>
+  </p>
+</p>
