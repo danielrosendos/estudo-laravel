@@ -25,7 +25,7 @@
 
 `O Aracasts fornece uma introdução completa ao Laravel,` [para os recém chegados ao framework](https://laracasts.com/series/laravel-from-scratch-2017). `É um ótimo lugar para começar sua jornada`
 
-<p><h1>##Instalação</h1></p>
+<p><h1>Instalação</h1></p>
 
 ## Requerimentos
 
@@ -109,11 +109,31 @@ Você também pode querer configurar alguns componentes adicionais do Laravel, c
 - [Database](https://laravel.com/docs/5.6/database#configuration)
 - [Session](https://laravel.com/docs/5.6/session#configuration)
 
+<p><h1>Web Server Configuration</h1></p>
+
 ## Pretty URLs
 
-1. Run through the [tooling setup](https://getbootstrap.com/docs/4.1/getting-started/build-tools/#tooling-setup) to install Jekyll (the site builder) and other Ruby dependencies with `bundle install`.
-2. Run `npm install` to install Node.js dependencies.
-3. Run `npm start` to compile CSS and JavaScript files, generate our docs, and watch for changes.
-4. Open `http://localhost:9001` in your browser, and voilà.
+<p><h3>Apache</h3></p>
+O Laravel inclui um arquivo `public/.htaccess` que é usado para fornecer URLs sem o controlador frontal `index.php` no caminho. Antes de servir o Laravel com o Apache, certifique-se de ativar o módulo `mod_rewrite` para que o arquivo `.htaccess` seja respeitado pelo servidor.
 
-Learn more about using Jekyll by reading its [documentation](https://jekyllrb.com/docs/home/).
+Se o arquivo `.htaccess` fornecido com o Laravel não funcionar com a instalação do Apache, tente esta alternativa:
+
+```php
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [L]   
+```
+
+<p><h3>Nginx</h3></p>
+Se você estiver usando o Nginx, a seguinte diretiva na configuração do seu site direcionará todas as solicitações para o front controller index.php:
+
+```php
+location / {
+    try_files $uri $uri/ /index.php?$query_string;
+}  
+```
+
+claro, ao usar Homestead ou Valet, URLs bonitas serão configuradas automaticamente.
