@@ -143,7 +143,7 @@ claro, ao usar Homestead ou Valet, URLs bonitas serão configuradas automaticame
 
 ## Instalação XAMPP
 <p align="center">
-  <a href="https://www.apachefriends.org/pt_br/index.html">
+  <a href="https://www.apachefriends.org/pt_br/index.html" aligh="center">
     <img src="https://cdn.worldvectorlogo.com/logos/xampp.svg" alt="Logo Laravel" width="100" height="100">
   </a>
 
@@ -157,3 +157,49 @@ claro, ao usar Homestead ou Valet, URLs bonitas serão configuradas automaticame
 </p>
 
 Os requerimentos para instalar o laravel, são os mesmo do [Requerimentos](#requerimentos)
+
+<p><h3>XAMPP</h3></p>
+Você precisa que seu computador seja capaz de atender aos requisitos mínimos necessários para instalar o Laravel. A maneira mais fácil é através no XAMPP. Basta Efetuar o download através do link, e seguir normalmente com a instalação.
+
+[`https://www.apachefriends.org/pt_br/download.html`](https://www.apachefriends.org/pt_br/download.html)
+
+<p><h3>Composer</h3></p>
+O Composer é uma ferramenta para gerenciamento de dependências em PHP. O Laravel utiliza o Composer para gerenciar suas dependência em PHP. O laravel utiliza o Composer para gerenciar suas dependências, ou seja, para instalar o Laravel, teremos que instalar o Composer.
+
+[`https://getcomposer.org/download/`](https://getcomposer.org/download/)
+
+Após instalar o Composer, basta abrir o Prompt de Comando do Windows e executar o comando:
+
+`composer`
+
+<p><h3>Instalando o Laravel</h3></p>
+Primeiramente devemos navegar até o diretório `htdcos` do xampp pelo prompt:
+
+`cd\`
+
+Utilizamos o comando cd\ para voltar ao diretório raiz, E sem seguida utilizamos o comando abaixo para acessar o diretório `htdocs` do xampp:
+
+`cd\xampp\htdocs`
+
+Após acessar o diretório `htdocs`, vamos instalar o Laravel utilizando o seguinte comando:
+
+`composer create-project --prefer-dist laravel/laravel nome_do_seu_projeto`
+
+<p><h3>Alterando as permissões</h3></p>
+O último passo é alterar as permissões dos diretórios `bootstrap/cache` e `storage`. Você pode alterar as permissões dos diretórios da maneira que achar mais conveniente.
+
+<p><h3>Como Acessar</h3></p>
+
+Há duas maneiras de acessar o projeto Laravel criado
+
+<p><h3>Acesso Manual</h3></p>
+Para acessar seu projeto, utilize o prompt de comando para navegar até o diretório aonde foi feita sua instalação por exemplo: `cd\xampp\htdocs\nome_do_seu_projeto`, e execute o comando:
+
+`php artisan serve`
+
+Pronto! Agora utilize seu navegador para acessar o endereço: localhost:8000
+
+<p><h3>Acesso pelo Xampp</h3></p>
+Abra o paiel de Controle do xampp e aperte start nos dois serviços, Apache e Mysql, feito isso abra seu navegador e digite:
+
+`localhost:porta_do_xampp(fornecida_pelo_programa)/nome_do_seu_projeto/public`
