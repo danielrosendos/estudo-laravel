@@ -19,12 +19,13 @@
 - [Requerimentos](#requerimentos)
 - [Instalando o Laravel](#instalando-o-laravel)
 - [Configurações](#configurações)
-- [Documentação](#documentação)
 
 ## Configuração do Web Server
 - [Pretty URLs](#pretyy-urls)
 
 `O Aracasts fornece uma introdução completa ao Laravel,` [para os recém chegados ao framework](https://laracasts.com/series/laravel-from-scratch-2017). `É um ótimo lugar para começar sua jornada`
+
+<p><h1>##Instalação</h1></p>
 
 ## Requerimentos
 
@@ -107,12 +108,6 @@ Você também pode querer configurar alguns componentes adicionais do Laravel, c
 - [Cache](https://laravel.com/docs/5.6/cache#configuration)
 - [Database](https://laravel.com/docs/5.6/database#configuration)
 - [Session](https://laravel.com/docs/5.6/session#configuration)
-
-## Documentação
-
-Bootstrap's documentation, included in this repo in the root directory, is built with [Jekyll](https://jekyllrb.com/) and publicly hosted on GitHub Pages at <https://getbootstrap.com/>. The docs may also be run locally.
-
-Documentation search is powered by [Algolia's DocSearch](https://community.algolia.com/docsearch/). Working on our search? Be sure to set `debug: true` in `site/docs/4.1/assets/js/src/search.js` file.
 
 ## Pretty URLs
 
