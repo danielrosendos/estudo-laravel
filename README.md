@@ -24,15 +24,8 @@
 ## Configuração do Web Server
 - [Pretty URLs](#pretyy-urls)
 
-<div class="panel panel-info">
-**Instalação**
-{: .panel-heading}
-<div class="panel-body">
+O Aracasts fornece uma introdução completa ao Laravel, [para os recém chegados ao framework](https://laracasts.com/series/laravel-from-scratch-2017). É um ótimo lugar para começar sua jornada {: .alert .alert-info}
 
-O Aracasts fornece uma introdução completa ao Laravel, [para os recém chegados ao framework](https://laracasts.com/series/laravel-from-scratch-2017). É um ótimo lugar para começar sua jornada
-
-</div>
-</div>
 
 ## Requerimentos
 
