@@ -53,6 +53,33 @@ Após instalar o Composer, basta abrir o Prompt de Comando do Windows e executar
 
 <p><h3>Via Laravel Installer</h3></p>
 
+Primeiro, baixe o instalador do Laravel usando o Composer:
+
+`composer global require "laravel/installer"`
+
+Certifique-se de colocar o diretório bin do forncedor do sistema em seu $PATH para que o executável do laravel possa ser Localizado pelo seu sistema. Este diretório existe em diferentes localizações com base no seu sistema operacional; no entanto, alguns locais comuns incluem:
+
+- macOS: `$HOME/.composer/vendor/bin`
+- GNU / Linux Distributions: `$HOME/.config/composer/vendor/bin`
+
+Uma vez instalado, o novo comando laravel criará uma nova instalação do Laravel no diretório que vocë especificar. Por Exemplo, o novo blog laravel criará um diretório chamado blog contendo uma nova instalação do Laravel com todas as dependências do Laravel já instaladas:
+
+`laravel new blog`
+
+<p><h3>Via Composer Create-Project</h3></p>
+
+Como Alternativa, você também pode instalar o Laravel emitindo o comando Composer create-project no seu terminal:
+
+`composer create-project --prefer-dist laravel/laravel blog`
+
+<p><h3>Local Development Server</h3></p>
+
+
+Se você tem o PHP instalado localmente e gostaria de usar o servidor de desenvolvimento interno do PHP para servir seu aplicativo, você pode usar o comando Artisan do serviço. Este comando irá iniciar um servidor de desenvolvimento em http://localhost:8000:
+
+`php artisan serve`
+
+Naturalmente, opções de desenvolvimento local mais robustas estão disponíveis via Homestead e Valet.
 
 ## Configurações
 
