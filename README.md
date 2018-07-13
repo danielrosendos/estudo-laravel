@@ -173,7 +173,7 @@ Após instalar o Composer, basta abrir o Prompt de Comando do Windows e executar
 `composer`
 
 <p><h3>Instalando o Laravel</h3></p>
-Primeiramente devemos navegar até o diretório `htdcos` do xampp pelo prompt:
+Primeiramente devemos navegar até o diretório `htdocs` do xampp pelo prompt:
 
 `cd\`
 
@@ -188,7 +188,7 @@ Após acessar o diretório `htdocs`, vamos instalar o Laravel utilizando o segui
 <p><h3>Alterando as permissões</h3></p>
 O último passo é alterar as permissões dos diretórios `bootstrap/cache` e `storage`. Você pode alterar as permissões dos diretórios da maneira que achar mais conveniente.
 
-<p><h3>Como Acessar</h3></p>
+<p><h1>Como Acessar</h1></p>
 
 Há duas maneiras de acessar o projeto Laravel criado
 
