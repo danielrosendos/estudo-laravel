@@ -28,16 +28,16 @@
 
 ## Requerimentos
 
-Several quick start options are available:
+A estrutura do Laravel possui alguns requisitos de sistema. É claro que todos esses requisitos são atendidos pela máquina virtual [Laravel Homestead](https://laravel.com/docs/5.6/homestead), portanto, é altamente recomendado que você use Homestead como seu ambiente de desenvolvimento local do Laravel. No entanto, se você não estiver usando o Homestead, será necessário garantir que seu servidor atenda aos seguintes requisitos.
 
-- [Download the latest release.](https://github.com/twbs/bootstrap/archive/v4.1.2.zip)
-- Clone the repo: `git clone https://github.com/twbs/bootstrap.git`
-- Install with [npm](https://www.npmjs.com/): `npm install bootstrap`
-- Install with [yarn](https://yarnpkg.com/): `yarn add bootstrap@4.1.2`
-- Install with [Composer](https://getcomposer.org/): `composer require twbs/bootstrap:4.1.2`
-- Install with [NuGet](https://www.nuget.org/): CSS: `Install-Package bootstrap` Sass: `Install-Package bootstrap.sass`
-
-Read the [Getting started page](https://getbootstrap.com/docs/4.1/getting-started/introduction/) for information on the framework contents, templates and examples, and more.
+- PHP >= 7.1.3 
+- OpenSSL PHP Extension
+- PDO PHP Extension
+- Mbstring PHP Extension
+- Tokenizer PHP Extension
+- XML PHP Extension
+- Ctype PHP Extension
+- JSON PHP Extension
 
 ## Instalando o Laravel
 
