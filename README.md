@@ -24,8 +24,7 @@
 ## Configuração do Web Server
 - [Pretty URLs](#pretyy-urls)
 
-O Aracasts fornece uma introdução completa ao Laravel, [para os recém chegados ao framework](https://laracasts.com/series/laravel-from-scratch-2017). É um ótimo lugar para começar sua jornada {: .alert .alert-info}
-
+`O Aracasts fornece uma introdução completa ao Laravel,` [para os recém chegados ao framework](https://laracasts.com/series/laravel-from-scratch-2017). `É um ótimo lugar para começar sua jornada`
 
 ## Requerimentos
 
