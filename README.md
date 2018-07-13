@@ -49,11 +49,11 @@ O Composer é uma ferramenta para gerenciamento de dependências em PHP. O Larav
 
 Após instalar o Composer, basta abrir o Prompt de Comando do Windows e executar o comando:
 
-[`composer`]
+`composer`
 
 Após executar o comando composer, a tela do seu Prompt de Comando vai ficar destar forma:
 
-<p><img href="http://thbastos.com/sites/default/files/versa-composer-linha-de-comando.jpg" alt="Img Composer"></p>
+<p><img href="https://dicasdeti.com/wp-content/uploads/2018/02/composer.jpg" alt="Img Composer"></p>
 
 
 ## Configurações
