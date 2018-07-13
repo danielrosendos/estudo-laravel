@@ -51,9 +51,7 @@ Após instalar o Composer, basta abrir o Prompt de Comando do Windows e executar
 
 `composer`
 
-Após executar o comando composer, a tela do seu Prompt de Comando vai ficar destar forma:
-
-<p><img href="https://dicasdeti.com/wp-content/uploads/2018/02/composer.jpg" alt="Img Composer"></p>
+<p><h3>Via Laravel Installer</h3></p>
 
 
 ## Configurações
