@@ -47,6 +47,15 @@ O Composer é uma ferramenta para gerenciamento de dependências em PHP. O Larav
 
 [`https://getcomposer.org/download/`](https://getcomposer.org/download/)
 
+Após instalar o Composer, basta abrir o Prompt de Comando do Windows e executar o comando:
+
+[`composer`]
+
+Após executar o comando composer, a tela do seu Prompt de Comando vai ficar destar forma:
+
+<p><img href="srcset="https://blog.mxcursos.com/wp-content/uploads/2016/08/composer-cmd.png 1349w, https://blog.mxcursos.com/wp-content/uploads/2016/08/composer-cmd-600x324.png 600w, https://blog.mxcursos.com/wp-content/uploads/2016/08/composer-cmd-768x414.png 768w, https://blog.mxcursos.com/wp-content/uploads/2016/08/composer-cmd-740x399.png 740w, https://blog.mxcursos.com/wp-content/uploads/2016/08/composer-cmd-24x13.png 24w"" alt="Img Composer"></p>
+
+
 ## Configurações
 
 Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
