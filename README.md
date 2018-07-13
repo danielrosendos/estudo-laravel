@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://laravel.com/">
-    <img src="https://www.google.com.br/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjg7MmpgJzcAhWGjVkKHSRaDNIQjRx6BAgBEAU&url=https%3A%2F%2Flogos-download.com%2F9720-laravel-logo-download.html&psig=AOvVaw0VMHuMj8625pU5D4E5RISs&ust=1531568743393828" alt="Logo Laravel" width=72 height=72>
+    <img src="https://getbootstrap.com/docs/4.1/assets/brand/bootstrap-solid.svg" alt="Logo Laravel" width=72 height=72>
   </a>
 
   <h3 align="center">Laravel 5.6</h3>
