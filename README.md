@@ -155,3 +155,5 @@ claro, ao usar Homestead ou Valet, URLs bonitas serão configuradas automaticame
     <br>
   </p>
 </p>
+
+Os requerimentos para instalar o laravel, são os mesmo do [Requerimentos](#requerimentos)
