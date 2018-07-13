@@ -83,37 +83,30 @@ Naturalmente, opções de desenvolvimento local mais robustas estão disponívei
 
 ## Configurações
 
-Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
+<p><h3>Diretório Público</h3></p>
+Depois de instalar o Laravel, você deve configurar o documento / raiz da Web do servidor da Web para ser o diretório `public`. O `index.php` neste diretório serve como o front controller para todas as requisições HTTP que entram no seu aplicativo.
 
-```
-bootstrap/
-└── dist/
-    ├── css/
-    │   ├── bootstrap-grid.css
-    │   ├── bootstrap-grid.css.map
-    │   ├── bootstrap-grid.min.css
-    │   ├── bootstrap-grid.min.css.map
-    │   ├── bootstrap-reboot.css
-    │   ├── bootstrap-reboot.css.map
-    │   ├── bootstrap-reboot.min.css
-    │   ├── bootstrap-reboot.min.css.map
-    │   ├── bootstrap.css
-    │   ├── bootstrap.css.map
-    │   ├── bootstrap.min.css
-    │   └── bootstrap.min.css.map
-    └── js/
-        ├── bootstrap.bundle.js
-        ├── bootstrap.bundle.js.map
-        ├── bootstrap.bundle.min.js
-        ├── bootstrap.bundle.min.js.map
-        ├── bootstrap.js
-        ├── bootstrap.js.map
-        ├── bootstrap.min.js
-        └── bootstrap.min.js.map
-```
+<p><h3>Configuração dos Arquivos</h3></p>
+Todos os arquivos de configuração do framework Laravel são armazenados no diretório `config`. Cada opção é documentada, portanto sinta-se à vontade para examinar os arquivos e se familiarizar com as opções disponíveis para você.
 
-We provide compiled CSS and JS (`bootstrap.*`), as well as compiled and minified CSS and JS (`bootstrap.min.*`). [source maps](https://developers.google.com/web/tools/chrome-devtools/debug/readability/source-maps) (`bootstrap.*.map`) are available for use with certain browsers' developer tools. Bundled JS files (`bootstrap.bundle.js` and minified `bootstrap.bundle.min.js`) include [Popper](https://popper.js.org/), but not [jQuery](https://jquery.com/).
+<p><h3>Permissões dos Diretórios</h3></p>
+Depois de instalar o Laravel, você pode precisar configurar algumas permissões. Os diretórios dentro dos diretórios `storge` e de `bootstrap/cache` devem ser graváveis ​​pelo seu servidor da Web ou o Laravel não será executado. Se você estiver usando a máquina virtual Homestead, essas permissões já devem estar definidas.
 
+<p><h3>Chave da Aplicação</h3></p>
+
+A próxima coisa que você deve fazer depois de instalar o Laravel é definir sua chave de aplicação para uma string aleatória. Se você instalou o Laravel através do Composer ou do instalador do Laravel, esta chave já foi configurada para você pela chave `php artisan: generate` command.
+
+Normalmente, essa sequência deve ter 32 caracteres. A chave pode ser definida no arquivo de ambiente `.env`. Se você não tiver renomeado o arquivo `.env.example` para `.env`, deverá fazer isso agora. Se a chave do aplicativo não estiver definida, suas sessões de usuário e outros dados criptografados não serão seguros!
+
+<p><h3>Configuração Adicionais</h3></p>
+O Laravel não precisa de quase nenhuma outra configuração fora da caixa. Você está livre para começar a desenvolver! Entretanto, você pode querer revisar o arquivo `config/app.php` e sua documentação. Ele contém várias opções, como `timezone` e `locale`, que você pode querer alterar de acordo com o seu aplicativo.
+
+
+Você também pode querer configurar alguns componentes adicionais do Laravel, como:
+
+- [Cache](https://laravel.com/docs/5.6/cache#configuration)
+- [Database](https://laravel.com/docs/5.6/database#configuration)
+- [Session](https://laravel.com/docs/5.6/session#configuration)
 
 ## Documentação
 
