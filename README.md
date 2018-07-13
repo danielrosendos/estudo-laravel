@@ -45,7 +45,7 @@ Laravel Utiliza o Composer para gerenciar suas dependências. Então, antes de u
 
 O Composer é uma ferramenta para gerenciamento de dependências em PHP. O Laravel utiliza o Composer para gerenciar suas dependência em PHP. O laravel utiliza o Composer para gerenciar suas dependências, ou seja, para instalar o Laravel, teremos que instalar o Composer.
 
-`[https://getcomposer.org/download/]`(https://getcomposer.org/download/)
+[`https://getcomposer.org/download/`](https://getcomposer.org/download/)
 
 ## Configurações
 
