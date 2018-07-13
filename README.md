@@ -14,18 +14,25 @@
   </p>
 </p>
 
-<br>
-
 ## Instalação
 
 - [Requerimentos](#requerimentos)
 - [Instalando o Laravel](#instalando-o-laravel)
 - [Configurações](#configurações)
 - [Documentação](#documentação)
-- [Contributing](#contributing)
 
 ## Configuração do Web Server
 - [Pretty URLs](#pretyy-urls)
+
+<div class="panel panel-info">
+**Instalação**
+{: .panel-heading}
+<div class="panel-body">
+
+O Aracasts fornece uma introdução completa ao Laravel, [para os recém chegados ao framework](https://laracasts.com/series/laravel-from-scratch-2017). É um ótimo lugar para começar sua jornada
+
+</div>
+</div>
 
 ## Requerimentos
 
@@ -97,7 +104,7 @@ Bootstrap's documentation, included in this repo in the root directory, is built
 
 Documentation search is powered by [Algolia's DocSearch](https://community.algolia.com/docsearch/). Working on our search? Be sure to set `debug: true` in `site/docs/4.1/assets/js/src/search.js` file.
 
-### Pretty URLs
+## Pretty URLs
 
 1. Run through the [tooling setup](https://getbootstrap.com/docs/4.1/getting-started/build-tools/#tooling-setup) to install Jekyll (the site builder) and other Ruby dependencies with `bundle install`.
 2. Run `npm install` to install Node.js dependencies.
