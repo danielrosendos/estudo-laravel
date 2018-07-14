@@ -1,7 +1,7 @@
-@extends('layout.principal')
+@extends('layouts.app')
 
-@section('conteudo')
-<h1>Detalhes do Produto: <?= $p->nome ?></h1>
+@section('content')
+<h1>Detalhes do Produto: {{ $p->nome }} </h1>
 
 <ul>
     <l1><b>Valor: </b> R$ {{ $p->valor}}</l1>

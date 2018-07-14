@@ -1,6 +1,6 @@
-@extends('layout.principal')
+@extends('layouts.app')
 
-@section('conteudo')
+@section('content')
 
 <div class="alert alert-success">
 

@@ -11,16 +11,20 @@
 |
 */
 
-Route::get('/', function () {
-    return '<h1>Primeira Lógica Laravel</h1>';
-});
+Route::get('/', 'HomeController@index');
 
 Route::get('/produtos', 'ProdutoController@lista');
 
 Route::get('/produtos/mostra/{id}', 'ProdutoController@mostrar')->where('id', '[0-9]+');
 
-Route::get('produtos/novo', 'ProdutoController@novo');
+Route::get('produtos/novo/{id}', 'ProdutoController@novo')->where('id', '[0-9]+');
 
-Route::post('produtos/adiciona', 'ProdutoController@adiciona');
+Route::post('produtos/adiciona/{id}', 'ProdutoController@adiciona');
 
 Route::get('produtos/json', 'ProdutoController@listaJson');
+
+Route::get('produtos/remove/{id}', 'ProdutoController@remove')->where('id', '[0-9]+');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

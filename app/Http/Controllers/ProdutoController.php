@@ -5,8 +5,14 @@ namespace App\Http\Controllers;
 use App\Produto;
 use Illuminate\Support\Facades\DB;
 use Request;
+use App\Http\Requests\ProdutosRequest;
+use Illuminate\Support\Facades\Validator;
 
 class ProdutoController extends Controller {
+
+    public function __construct(){
+        $this->middleware('auth');
+    }
  
     public function lista(){
 
@@ -28,14 +34,26 @@ class ProdutoController extends Controller {
         return view('produto.detalhes')->with('p', $resposta);
     }
 
-    public function novo(){
-        return view('produto.formulario');
+    public function novo($id){
+        
+        $produto = Produto::find($id);
+
+        if(empty($produto)){
+            return view('produto.formulario')->with('p', $produto);
+        }
+    
+        return view('produto.formulario')->with('p', $produto);
     }
 
-    public function adiciona(){
-        
-        Produto::create(Request::all());
+    public function adiciona(ProdutosRequest $request, $id){
 
+        if($id==0){
+            Produto::create($request->all());
+        }
+        else{
+            Produto::find($id)->update(Request::except($id));
+        }
+    
         return redirect()->action('ProdutoController@lista')->withInput(Request::only('nome'));
     }
 
@@ -43,6 +61,14 @@ class ProdutoController extends Controller {
 
         $produtos = Produto::all();
         return response()->json($produtos);
+
+    }
+
+    public function remove($id){
+
+        $produto = Produto::find($id);
+        $produto->delete();
+        return redirect()->action('ProdutoController@lista');
 
     }
     
